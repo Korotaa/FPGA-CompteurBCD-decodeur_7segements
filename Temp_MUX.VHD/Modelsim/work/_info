@@ -1,0 +1,59 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\ENSAF\after\Semestre2 Ensa SEII1\VHDL\TP4_ensa\Temp_MUX.VHD\Modelsim
+Etemp_mux
+Z1 !s101 -O0 -O0 -O0 -O0
+Z2 w1588382921
+Z3 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z4 8C:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/Temp_MUX.VHD/Src/Temp_MUX.vhd
+Z5 FC:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/Temp_MUX.VHD/Src/Temp_MUX.vhd
+l0
+L27
+V5XdUd7Z[MFPF`fEN_7k;92
+Z6 OV;C;6.4a;39
+R1
+32
+Z7 o-work work -O0
+Z8 tExplicit 1
+!s100 6eX]KlGfZoR?d1Gjj[jMm1
+Artl
+R3
+DEx4 work 8 temp_mux 0 22 5XdUd7Z[MFPF`fEN_7k;92
+l42
+L41
+VMAOcZMTXizTZ^?YFP]bZ@1
+R6
+32
+Z9 Mx1 4 ieee 14 std_logic_1164
+R7
+R8
+!s100 78@G]No>KLM0n<4H>OI3c0
+Etemp_mux_tb
+R1
+Z10 w1588383421
+R3
+Z11 8C:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/Temp_MUX.VHD/Testbench/Temp_MUX_tb.vhd
+Z12 FC:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/Temp_MUX.VHD/Testbench/Temp_MUX_tb.vhd
+l0
+L28
+VcZ:i409>SNUKe:0:_D9nE2
+!s100 _7ICca02==59lJ9Uk?8Xj2
+R6
+R1
+32
+R7
+R8
+Artl
+R3
+Z13 DEx4 work 11 temp_mux_tb 0 22 cZ:i409>SNUKe:0:_D9nE2
+l54
+L35
+VOLbU@JiC_jbgL1hETQKGc1
+!s100 h?Ig`ZZkFcoYSV9[D>1IR1
+R6
+32
+R9
+R7
+R8

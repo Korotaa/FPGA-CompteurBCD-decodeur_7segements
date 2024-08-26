@@ -1,0 +1,80 @@
+--**********************************************************--
+-- ENSA FES 
+-- Filière : 1 ère Année GSEII
+--**********************************************************
+--Title : CMPT_BCD_tb.vhd
+--TP : Simulation,Synthèse et Implémentation FPGA
+--Block : Multiplexeur Temporel
+--***********************************************************
+--File : CMPT_BCD_tb.vhd
+--Authors : COULIBALY Korota Arsène
+--Created : 28/04/2020
+--************************************************************
+--Description :il s'agit là de simuler le comportement de notre
+--compteur pour cela il nous faut mettre au point un environne-
+--ment de simulation
+--************************************************************
+
+--***********************************************************
+--                Used Libraries
+--***********************************************************
+
+LIBRARY IEEE;
+USE IEEE.NUMERIC_STD;
+USE IEEE.STD_LOGIC_1164.all;
+USE IEEE.STD_LOGIC_UNSIGNED.all;
+
+--*************************************************************
+--               ENTITY Declaration
+--*************************************************************
+
+ENTITY CMPT_BCD_tb IS 
+
+END CMPT_BCD_tb;
+
+--**************************************************************
+--              rtl Description
+--**************************************************************
+
+ARCHITECTURE rtl OF CMPT_BCD_tb IS 
+
+  COMPONENT CMPT_BCD IS PORT(
+    clk: IN std_logic;
+    rst: IN std_logic;
+    enable: IN std_logic;
+    count_1: OUT std_logic_vector(3 DOWNTO 0);
+    count_2: OUT std_logic_vector(3 DOWNTO 0);
+    count_3: OUT std_logic_vector(3 DOWNTO 0));
+  END COMPONENT;
+SIGNAL clk: std_logic;
+SIGNAL rst: std_logic;
+SIGNAL enable: std_logic;
+SIGNAL count_1: std_logic_vector(3 DOWNTO 0);
+SIGNAL count_2: std_logic_vector(3 DOWNTO 0);
+SIGNAL count_3: std_logic_vector(3 DOWNTO 0);
+BEGIN
+  U0: CMPT_BCD PORT MAP(
+  clk => clk,
+  rst  => rst,
+  enable  => enable,
+  count_1  => count_1,
+  count_2  => count_2,
+  count_3  => count_3);
+  rst<='1';
+  PROCESS
+    BEGIN
+      clk <= '1';
+      WAIT FOR 10 ns;
+      clk <= '0';
+      WAIT FOR 10 ns;
+   END PROCESS;
+  
+  PROCESS
+    BEGIN
+      enable <= '1'; 
+      WAIT FOR 40 ns;
+      enable <= '0';
+      WAIT FOR 10 ns;
+   END PROCESS;
+  
+END rtl;

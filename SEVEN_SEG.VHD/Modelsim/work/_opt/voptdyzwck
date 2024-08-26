@@ -1,0 +1,65 @@
+m255
+K3
+13
+Z0 cModel Technology
+Z1 dC:\ENSAF\after\Semestre2 Ensa SEII1\VHDL\TP4_ensa\SEVEN_SEG.VHD\Modelsim
+T_opt
+Z2 Vgad0El]?73>baI4T`eC<Q0
+Z3 04 12 3 work seven_seg_tb rtl 0
+Z4 =1-a08cfdfd75e5-5eab3e2f-197-2808
+Z5 o-quiet -auto_acc_if_foreign -work work
+Z6 tExplicit 1
+Z7 OE;O;6.3f;37
+Eseven_seg
+Z8 w1588277062
+Z9 DPx22 C:\Modeltech_6.3f\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+Z10 8C:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/SEVEN_SEG.VHD/Src/seven_seg.vhd
+Z11 FC:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/SEVEN_SEG.VHD/Src/seven_seg.vhd
+l0
+L30
+Z12 Vnd`1H6Ag3noDnTL3hLJ?U0
+Z13 OE;C;6.3f;37
+Z14 o-work work
+R6
+Artl
+R9
+Z15 DEx77 C:\ENSAF\after\Semestre2 Ensa SEII1\VHDL\TP4_ensa\SEVEN_SEG.VHD\Modelsim\work 9 seven_seg 0 22 nd`1H6Ag3noDnTL3hLJ?U0
+32
+Z16 Mx1 22 C:\Modeltech_6.3f\ieee 14 std_logic_1164
+l40
+L39
+Z17 Vz0[4]m<k<VeHQizG`a5Z63
+R13
+R14
+R6
+Eseven_seg_tb
+Z18 w1588279313
+R9
+R13
+32
+Z19 !s101 -O0 -O0 -O0 -O0
+Z20 8C:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/SEVEN_SEG.VHD/Testbench/seven_seg_tb.vhd
+Z21 FC:/ENSAF/after/Semestre2 Ensa SEII1/VHDL/TP4_ensa/SEVEN_SEG.VHD/Testbench/seven_seg_tb.vhd
+l0
+L27
+Z22 Vj]0M1G9;J4Sb2ciI_o``T1
+Z23 OV;C;6.4a;39
+R19
+Z24 o-work work -O0
+R6
+Z25 !s100 e27:TknRn`;9X]09GD41@3
+Artl
+R15
+R9
+DEx77 C:\ENSAF\after\Semestre2 Ensa SEII1\VHDL\TP4_ensa\SEVEN_SEG.VHD\Modelsim\work 12 seven_seg_tb 0 22 j]0M1G9;J4Sb2ciI_o``T1
+R13
+32
+R16
+l44
+L34
+Z26 VRGWO9[1=LC?jFBJC9mDQD2
+R23
+R24
+R6
+Z27 !s100 fWm1ZkT;?4g0o9TgVffaT1

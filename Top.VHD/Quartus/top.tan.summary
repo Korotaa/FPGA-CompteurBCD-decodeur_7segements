@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.351 ns
+From           : Temp_MUX:mux|s_out[0]
+To             : seg_out[6]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.468 ns
+From           : pol
+To             : seg_out[6]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 200.96 MHz ( period = 4.976 ns )
+From           : CMPT_BCD:compteur|digit_2[2]
+To             : Temp_MUX:mux|s_out[2]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Temp_MUX:mux|count[1]
+To             : Temp_MUX:mux|s_out[2]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 16
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 16
+
+--------------------------------------------------------------------------------------
+

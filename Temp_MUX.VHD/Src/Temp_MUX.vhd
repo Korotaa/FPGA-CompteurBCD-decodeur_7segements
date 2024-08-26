@@ -1,0 +1,74 @@
+--**********************************************************--
+-- ENSA FES 
+-- Filière : 1 ère Année GSEII
+--**********************************************************
+--Title : Temp_MUX.vhd
+--TP : Simulation,Synthèse et Implémentation FPGA
+--Block : Multiplexeur Temporel
+--***********************************************************
+--File : Temp_MUX.vhd
+--Authors : COULIBALY Korota Arsène
+--Created : 28/04/2020
+--************************************************************
+--Description :On affecte quelques scénarios à Data_in et on 
+--observe la sortie
+--************************************************************
+
+--***********************************************************
+-- Used Libraries
+--***********************************************************
+
+LIBRARY IEEE;
+USE IEEE.NUMERIC_STD.all;
+USE IEEE.STD_LOGIC_1164.all;
+USE IEEE.STD_LOGIC_UNSIGNED.all;
+
+--*************************************************************
+--        ENTITY Declaration
+--*************************************************************
+ENTITY Temp_MUX IS PORT(
+a:IN std_logic_vector(3 DOWNTO 0);
+b:IN std_logic_vector(3 DOWNTO 0); 
+c:IN std_logic_vector(3 DOWNTO 0); 
+rst: IN std_logic;
+clk: IN std_logic; 
+s_out:OUT std_logic_vector(3 DOWNTO 0));   
+END Temp_MUX;
+
+--***************************************************************
+--         rtl Description
+--**************************************************************
+
+ARCHITECTURE rtl OF Temp_MUX IS
+SIGNAL count : INTEGER range 0 to 9;
+BEGIN
+PROCESS(clk)
+  BEGIN
+    IF (clk'event AND clk='1')
+       THEN   
+           IF count >9
+           THEN
+               count <= 0;
+          ELSE
+             count <= count + 1;
+          END IF;
+    END IF;
+  END PROCESS;
+  
+PROCESS(a,b,c,rst)
+  BEGIN
+        IF rst <='0'
+           THEN
+               s_out <="0000";
+          ELSIF count < 3
+           THEN
+               s_out<=a;
+             ELSIF (count>=3 AND count < 6 )
+               THEN
+                   s_out<=b;
+                   ELSIF (count>=6 AND count < 9 )
+                    THEN
+                        s_out<=c;
+          END IF;
+        END PROCESS;
+END rtl;
